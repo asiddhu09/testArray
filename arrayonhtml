@@ -1,0 +1,27 @@
+inputRef = document.getElementById('input1');
+btnRef = document.getElementById('btn1')
+outputRef = document.getElementById('output1')
+
+
+
+function deleteElement(array, inputRef){
+    const newArray = [];
+
+    for (let i=0; i<array.length; i++){
+if(array[i] !== inputRef){
+    newArray.push(array[i]);
+}
+    }
+    return newArray;
+}
+
+
+const result = deleteElement([10,20,30,50,40],inputRef);
+console.log(result)
+
+btnRef.addEventListener("click", deleteElement(inputRef)
+    // let inputRef = inputRef.value;
+     
+    //   outputRef.innerHTML = result
+
+    )
